@@ -1,0 +1,318 @@
+Title: * C:\Users\eriki\Documents\GitHub\Qspice-2\IsoDCDC\CBB011M12GM4T_test1.qsch
+Date: Fri Nov  7 09:55:06 2025
+Plotname: Operating Point
+Flags: real
+No. Variables: 226
+No. Points: 1                    
+Command: QSPICE80, Build Oct 27 2025 10:00:08
+.param temp=27
+.alias I(RSQ4K•X7) (0.854700854700855mho*V(k4intsq4•x7,sq4•x7))
+.alias I(RSQ3K•X7) (0.854700854700855mho*V(k3intsq3•x7,sq3•x7))
+.alias I(RSQ2K•X7) (0.854700854700855mho*V(k2intsq2•x7,sq2•x7))
+.alias I(RSQ1K•X7) (0.854700854700855mho*V(k1intsq1•x7,sq1•x7))
+.alias I(RSQ4G•X7) (0.854700854700855mho*V(g4intgq4•x7,gq4•x7))
+.alias I(RSQ3G•X7) (0.854700854700855mho*V(g3intgq3•x7,gq3•x7))
+.alias I(RSQ2G•X7) (0.854700854700855mho*V(g2intgq2•x7,gq2•x7))
+.alias I(RSQ1G•X7) (0.854700854700855mho*V(g1intgq1•x7,gq1•x7))
+.alias I(RPP2S•X7) (0.1mho*V(sq4•x7,0))
+.alias I(RSP2S•X7) (595.238095238095mho*V(sq4intdc-2•x7,0))
+.alias I(RPP1S•X7) (0.1mho*V(sq2•x7,0))
+.alias I(RSP1S•X7) (595.238095238095mho*V(sq2intdc-1•x7,0))
+.alias I(RPP2P•X7) (0.1mho*V(sq3•x7,n06))
+.alias I(RSP2P•X7) (595.238095238095mho*V(sq3intac2•x7,n06))
+.alias I(RPP1P•X7) (0.1mho*V(sq1•x7,n05))
+.alias I(RSP1P•X7) (595.238095238095mho*V(sq1intac1•x7,n05))
+.alias I(RPD•X7) (0.1mho*V(n02,d•x7))
+.alias I(RSD•X7) (675.675675675676mho*V(dc+intd•x7,d•x7))
+.alias I(RTGROUND•XDIE_THERMAL_Q4•X7) (0.0001mho*V(n07,0))
+.alias I(RT4•XDIE_THERMAL_Q4•X7) (3.54962373988357mho*V(3•xdie_thermal_q4•x7,n07))
+.alias I(RT3•XDIE_THERMAL_Q4•X7) (8.48824378236143mho*V(2•xdie_thermal_q4•x7,3•xdie_thermal_q4•x7))
+.alias I(RT2•XDIE_THERMAL_Q4•X7) (39.8406374501992mho*V(1•xdie_thermal_q4•x7,2•xdie_thermal_q4•x7))
+.alias I(RT1•XDIE_THERMAL_Q4•X7) (228.83295194508mho*V(¥4,1•xdie_thermal_q4•x7))
+.alias I(RTJ•XDIE_THERMAL_Q4•X7) (0.0001mho*V(¥4,0))
+.alias I(RTGROUND•XDIE_THERMAL_Q2•X7) (0.0001mho*V(n07,0))
+.alias I(RT4•XDIE_THERMAL_Q2•X7) (3.54962373988357mho*V(3•xdie_thermal_q2•x7,n07))
+.alias I(RT3•XDIE_THERMAL_Q2•X7) (8.48824378236143mho*V(2•xdie_thermal_q2•x7,3•xdie_thermal_q2•x7))
+.alias I(RT2•XDIE_THERMAL_Q2•X7) (39.8406374501992mho*V(1•xdie_thermal_q2•x7,2•xdie_thermal_q2•x7))
+.alias I(RT1•XDIE_THERMAL_Q2•X7) (228.83295194508mho*V(¥2,1•xdie_thermal_q2•x7))
+.alias I(RTJ•XDIE_THERMAL_Q2•X7) (0.0001mho*V(¥2,0))
+.alias I(RTGROUND•XDIE_THERMAL_Q3•X7) (0.0001mho*V(n07,0))
+.alias I(RT4•XDIE_THERMAL_Q3•X7) (3.54962373988357mho*V(3•xdie_thermal_q3•x7,n07))
+.alias I(RT3•XDIE_THERMAL_Q3•X7) (8.48824378236143mho*V(2•xdie_thermal_q3•x7,3•xdie_thermal_q3•x7))
+.alias I(RT2•XDIE_THERMAL_Q3•X7) (39.8406374501992mho*V(1•xdie_thermal_q3•x7,2•xdie_thermal_q3•x7))
+.alias I(RT1•XDIE_THERMAL_Q3•X7) (228.83295194508mho*V(¥3,1•xdie_thermal_q3•x7))
+.alias I(RTJ•XDIE_THERMAL_Q3•X7) (0.0001mho*V(¥3,0))
+.alias I(RTGROUND•XDIE_THERMAL_Q1•X7) (0.0001mho*V(n07,0))
+.alias I(RT4•XDIE_THERMAL_Q1•X7) (3.54962373988357mho*V(3•xdie_thermal_q1•x7,n07))
+.alias I(RT3•XDIE_THERMAL_Q1•X7) (8.48824378236143mho*V(2•xdie_thermal_q1•x7,3•xdie_thermal_q1•x7))
+.alias I(RT2•XDIE_THERMAL_Q1•X7) (39.8406374501992mho*V(1•xdie_thermal_q1•x7,2•xdie_thermal_q1•x7))
+.alias I(RT1•XDIE_THERMAL_Q1•X7) (228.83295194508mho*V(¥1,1•xdie_thermal_q1•x7))
+.alias I(RTJ•XDIE_THERMAL_Q1•X7) (0.0001mho*V(¥1,0))
+.alias I(RG0•XDIE_ELECTRICAL_Q4•X7) (1e-08mho*V(gq4•x7,0))
+.alias I(R3•XDIE_ELECTRICAL_Q4•X7) (1e-11mho*V(qm•xdie_electrical_q4•x7,0))
+.alias I(RQE•XDIE_ELECTRICAL_Q4•X7) (0.115074798619102mho*V(qe•xdie_electrical_q4•x7,qe2•xdie_electrical_q4•x7))
+.alias I(R2•XDIE_ELECTRICAL_Q4•X7) (0.001mho*V(sq3•x7,d2•xdie_electrical_q4•x7))
+.alias I(RBYPASS•XDIE_ELECTRICAL_Q4•X7) (1e-09mho*V(sq3•x7,sq4•x7))
+.alias I(R1•XDIE_ELECTRICAL_Q4•X7) (0.001mho*V(s2•xdie_electrical_q4•x7,sq4•x7))
+.alias I(RG0•XDIE_ELECTRICAL_Q2•X7) (1e-08mho*V(gq2•x7,0))
+.alias I(R3•XDIE_ELECTRICAL_Q2•X7) (1e-11mho*V(qm•xdie_electrical_q2•x7,0))
+.alias I(RQE•XDIE_ELECTRICAL_Q2•X7) (0.115074798619102mho*V(qe•xdie_electrical_q2•x7,qe2•xdie_electrical_q2•x7))
+.alias I(R2•XDIE_ELECTRICAL_Q2•X7) (0.001mho*V(sq1•x7,d2•xdie_electrical_q2•x7))
+.alias I(RBYPASS•XDIE_ELECTRICAL_Q2•X7) (1e-09mho*V(sq1•x7,sq2•x7))
+.alias I(R1•XDIE_ELECTRICAL_Q2•X7) (0.001mho*V(s2•xdie_electrical_q2•x7,sq2•x7))
+.alias I(RG0•XDIE_ELECTRICAL_Q3•X7) (1e-08mho*V(gq3•x7,0))
+.alias I(R3•XDIE_ELECTRICAL_Q3•X7) (1e-11mho*V(qm•xdie_electrical_q3•x7,0))
+.alias I(RQE•XDIE_ELECTRICAL_Q3•X7) (0.115074798619102mho*V(qe•xdie_electrical_q3•x7,qe2•xdie_electrical_q3•x7))
+.alias I(R2•XDIE_ELECTRICAL_Q3•X7) (0.001mho*V(d•x7,d2•xdie_electrical_q3•x7))
+.alias I(RBYPASS•XDIE_ELECTRICAL_Q3•X7) (1e-09mho*V(d•x7,sq3•x7))
+.alias I(R1•XDIE_ELECTRICAL_Q3•X7) (0.001mho*V(s2•xdie_electrical_q3•x7,sq3•x7))
+.alias I(RG0•XDIE_ELECTRICAL_Q1•X7) (1e-08mho*V(gq1•x7,0))
+.alias I(R3•XDIE_ELECTRICAL_Q1•X7) (1e-11mho*V(qm•xdie_electrical_q1•x7,0))
+.alias I(RQE•XDIE_ELECTRICAL_Q1•X7) (0.115074798619102mho*V(qe•xdie_electrical_q1•x7,qe2•xdie_electrical_q1•x7))
+.alias I(R2•XDIE_ELECTRICAL_Q1•X7) (0.001mho*V(d•x7,d2•xdie_electrical_q1•x7))
+.alias I(RBYPASS•XDIE_ELECTRICAL_Q1•X7) (1e-09mho*V(d•x7,sq1•x7))
+.alias I(R1•XDIE_ELECTRICAL_Q1•X7) (0.001mho*V(s2•xdie_electrical_q1•x7,sq1•x7))
+.alias I(RGK4•X7) (1e-06mho*V(g4,k4))
+.alias I(RGK3•X7) (1e-06mho*V(g3,k3))
+.alias I(RGK2•X7) (1e-06mho*V(g2,k2))
+.alias I(RGK1•X7) (1e-06mho*V(g1,k1))
+.alias I(R2) (0.001mho*V(n06,0))
+.alias I(R1) (0.001mho*V(n05,0))
+Variables:
+	0	V(n05)	voltage
+	1	V(n06)	voltage
+	2	V(n01)	voltage
+	3	V(p1v•x1)	voltage
+	4	V(q•x1)	voltage
+	5	V(¬q•x1)	voltage
+	6	V(t•x1)	voltage
+	7	V(a•x1)	voltage
+	8	V(b•x1)	voltage
+	9	V(¥0)	voltage
+	10	V(n01•x1)	voltage
+	11	V(vdd•x4)	voltage
+	12	V(g1)	voltage
+	13	V(n03)	voltage
+	14	V(vss•x4)	voltage
+	15	V(k1)	voltage
+	16	V(vdd•x3)	voltage
+	17	V(g2)	voltage
+	18	V(n04)	voltage
+	19	V(vss•x3)	voltage
+	20	V(k2)	voltage
+	21	V(vdd•x5)	voltage
+	22	V(g3)	voltage
+	23	V(vss•x5)	voltage
+	24	V(k3)	voltage
+	25	V(vdd•x6)	voltage
+	26	V(g4)	voltage
+	27	V(vss•x6)	voltage
+	28	V(k4)	voltage
+	29	V(n02)	voltage
+	30	V(d•x7)	voltage
+	31	V(s2•xdie_electrical_q1•x7)	voltage
+	32	V(fwd•xdie_electrical_q1•x7)	voltage
+	33	V(gq1•x7)	voltage
+	34	V(sq1•x7)	voltage
+	35	V(¥1)	voltage
+	36	V(iq1•x7)	voltage
+	37	V(rev•xdie_electrical_q1•x7)	voltage
+	38	V(d2•xdie_electrical_q1•x7)	voltage
+	39	V(qm•xdie_electrical_q1•x7)	voltage
+	40	V(qe•xdie_electrical_q1•x7)	voltage
+	41	V(qe1•xdie_electrical_q1•x7)	voltage
+	42	V(qe2•xdie_electrical_q1•x7)	voltage
+	43	V(s2•xdie_electrical_q3•x7)	voltage
+	44	V(fwd•xdie_electrical_q3•x7)	voltage
+	45	V(gq3•x7)	voltage
+	46	V(sq3•x7)	voltage
+	47	V(¥3)	voltage
+	48	V(iq3•x7)	voltage
+	49	V(rev•xdie_electrical_q3•x7)	voltage
+	50	V(d2•xdie_electrical_q3•x7)	voltage
+	51	V(qm•xdie_electrical_q3•x7)	voltage
+	52	V(qe•xdie_electrical_q3•x7)	voltage
+	53	V(qe1•xdie_electrical_q3•x7)	voltage
+	54	V(qe2•xdie_electrical_q3•x7)	voltage
+	55	V(s2•xdie_electrical_q2•x7)	voltage
+	56	V(fwd•xdie_electrical_q2•x7)	voltage
+	57	V(gq2•x7)	voltage
+	58	V(sq2•x7)	voltage
+	59	V(¥2)	voltage
+	60	V(iq2•x7)	voltage
+	61	V(rev•xdie_electrical_q2•x7)	voltage
+	62	V(d2•xdie_electrical_q2•x7)	voltage
+	63	V(qm•xdie_electrical_q2•x7)	voltage
+	64	V(qe•xdie_electrical_q2•x7)	voltage
+	65	V(qe1•xdie_electrical_q2•x7)	voltage
+	66	V(qe2•xdie_electrical_q2•x7)	voltage
+	67	V(s2•xdie_electrical_q4•x7)	voltage
+	68	V(fwd•xdie_electrical_q4•x7)	voltage
+	69	V(gq4•x7)	voltage
+	70	V(sq4•x7)	voltage
+	71	V(¥4)	voltage
+	72	V(iq4•x7)	voltage
+	73	V(rev•xdie_electrical_q4•x7)	voltage
+	74	V(d2•xdie_electrical_q4•x7)	voltage
+	75	V(qm•xdie_electrical_q4•x7)	voltage
+	76	V(qe•xdie_electrical_q4•x7)	voltage
+	77	V(qe1•xdie_electrical_q4•x7)	voltage
+	78	V(qe2•xdie_electrical_q4•x7)	voltage
+	79	V(1•xdie_thermal_q1•x7)	voltage
+	80	V(2•xdie_thermal_q1•x7)	voltage
+	81	V(3•xdie_thermal_q1•x7)	voltage
+	82	V(n07)	voltage
+	83	V(1•xdie_thermal_q3•x7)	voltage
+	84	V(2•xdie_thermal_q3•x7)	voltage
+	85	V(3•xdie_thermal_q3•x7)	voltage
+	86	V(1•xdie_thermal_q2•x7)	voltage
+	87	V(2•xdie_thermal_q2•x7)	voltage
+	88	V(3•xdie_thermal_q2•x7)	voltage
+	89	V(1•xdie_thermal_q4•x7)	voltage
+	90	V(2•xdie_thermal_q4•x7)	voltage
+	91	V(3•xdie_thermal_q4•x7)	voltage
+	92	V(dc+intd•x7)	voltage
+	93	V(sq1intac1•x7)	voltage
+	94	V(sq3intac2•x7)	voltage
+	95	V(sq2intdc-1•x7)	voltage
+	96	V(sq4intdc-2•x7)	voltage
+	97	V(g1intgq1•x7)	voltage
+	98	V(g2intgq2•x7)	voltage
+	99	V(g3intgq3•x7)	voltage
+	100	V(g4intgq4•x7)	voltage
+	101	V(k1intsq1•x7)	voltage
+	102	V(k2intsq2•x7)	voltage
+	103	V(k3intsq3•x7)	voltage
+	104	V(k4intsq4•x7)	voltage
+	105	I(B4•X1)	current
+	106	I(B3•X1)	current
+	107	I(B2•X1)	current
+	108	I(B1•X1)	current
+	109	I(EITQ•XDIE_ELECTRICAL_Q4•X7)	current
+	110	I(EV1•XDIE_ELECTRICAL_Q4•X7)	current
+	111	I(ECURR•XDIE_ELECTRICAL_Q4•X7)	current
+	112	I(EDS•XDIE_ELECTRICAL_Q4•X7)	current
+	113	I(EITQ•XDIE_ELECTRICAL_Q2•X7)	current
+	114	I(EV1•XDIE_ELECTRICAL_Q2•X7)	current
+	115	I(ECURR•XDIE_ELECTRICAL_Q2•X7)	current
+	116	I(EDS•XDIE_ELECTRICAL_Q2•X7)	current
+	117	I(EITQ•XDIE_ELECTRICAL_Q3•X7)	current
+	118	I(EV1•XDIE_ELECTRICAL_Q3•X7)	current
+	119	I(ECURR•XDIE_ELECTRICAL_Q3•X7)	current
+	120	I(EDS•XDIE_ELECTRICAL_Q3•X7)	current
+	121	I(EITQ•XDIE_ELECTRICAL_Q1•X7)	current
+	122	I(EV1•XDIE_ELECTRICAL_Q1•X7)	current
+	123	I(ECURR•XDIE_ELECTRICAL_Q1•X7)	current
+	124	I(EDS•XDIE_ELECTRICAL_Q1•X7)	current
+	125	I(V3)	current
+	126	I(V2)	current
+	127	I(V2•X6)	current
+	128	I(V1•X6)	current
+	129	I(V2•X5)	current
+	130	I(V1•X5)	current
+	131	I(V2•X3)	current
+	132	I(V1•X3)	current
+	133	I(V2•X4)	current
+	134	I(V1•X4)	current
+	135	I(VLOGIC1V•X1)	current
+	136	I(V1)	current
+	137	I(GPWR•XDIE_THERMAL_Q4•X7)	current
+	138	I(GPWR•XDIE_THERMAL_Q2•X7)	current
+	139	I(GPWR•XDIE_THERMAL_Q3•X7)	current
+	140	I(GPWR•XDIE_THERMAL_Q1•X7)	current
+	141	I(G_CGS•XDIE_ELECTRICAL_Q4•X7)	current
+	142	I(G_CDS•XDIE_ELECTRICAL_Q4•X7)	current
+	143	I(G_CDG•XDIE_ELECTRICAL_Q4•X7)	current
+	144	I(GI1•XDIE_ELECTRICAL_Q4•X7)	current
+	145	I(GRBD•XDIE_ELECTRICAL_Q4•X7)	current
+	146	I(GRDS•XDIE_ELECTRICAL_Q4•X7)	current
+	147	I(GDS•XDIE_ELECTRICAL_Q4•X7)	current
+	148	I(G_CGS•XDIE_ELECTRICAL_Q2•X7)	current
+	149	I(G_CDS•XDIE_ELECTRICAL_Q2•X7)	current
+	150	I(G_CDG•XDIE_ELECTRICAL_Q2•X7)	current
+	151	I(GI1•XDIE_ELECTRICAL_Q2•X7)	current
+	152	I(GRBD•XDIE_ELECTRICAL_Q2•X7)	current
+	153	I(GRDS•XDIE_ELECTRICAL_Q2•X7)	current
+	154	I(GDS•XDIE_ELECTRICAL_Q2•X7)	current
+	155	I(G_CGS•XDIE_ELECTRICAL_Q3•X7)	current
+	156	I(G_CDS•XDIE_ELECTRICAL_Q3•X7)	current
+	157	I(G_CDG•XDIE_ELECTRICAL_Q3•X7)	current
+	158	I(GI1•XDIE_ELECTRICAL_Q3•X7)	current
+	159	I(GRBD•XDIE_ELECTRICAL_Q3•X7)	current
+	160	I(GRDS•XDIE_ELECTRICAL_Q3•X7)	current
+	161	I(GDS•XDIE_ELECTRICAL_Q3•X7)	current
+	162	I(G_CGS•XDIE_ELECTRICAL_Q1•X7)	current
+	163	I(G_CDS•XDIE_ELECTRICAL_Q1•X7)	current
+	164	I(G_CDG•XDIE_ELECTRICAL_Q1•X7)	current
+	165	I(GI1•XDIE_ELECTRICAL_Q1•X7)	current
+	166	I(GRBD•XDIE_ELECTRICAL_Q1•X7)	current
+	167	I(GRDS•XDIE_ELECTRICAL_Q1•X7)	current
+	168	I(GDS•XDIE_ELECTRICAL_Q1•X7)	current
+	169	I(S1•X4)	current
+	170	I(S2•X4)	current
+	171	I(S1•X3)	current
+	172	I(S2•X3)	current
+	173	I(S1•X5)	current
+	174	I(S2•X5)	current
+	175	I(S1•X6)	current
+	176	I(S2•X6)	current
+	177	I(LQ4K•X7)	current
+	178	I(LQ3K•X7)	current
+	179	I(LQ2K•X7)	current
+	180	I(LQ1K•X7)	current
+	181	I(LQ4G•X7)	current
+	182	I(LQ3G•X7)	current
+	183	I(LQ2G•X7)	current
+	184	I(LQ1G•X7)	current
+	185	I(LP2S•X7)	current
+	186	I(LP1S•X7)	current
+	187	I(LP2P•X7)	current
+	188	I(LP1P•X7)	current
+	189	I(LD•X7)	current
+	190	I(LQE•XDIE_ELECTRICAL_Q4•X7)	current
+	191	I(LQE•XDIE_ELECTRICAL_Q2•X7)	current
+	192	I(LQE•XDIE_ELECTRICAL_Q3•X7)	current
+	193	I(LQE•XDIE_ELECTRICAL_Q1•X7)	current
+	194	I(CT4•XDIE_THERMAL_Q4•X7)	current
+	195	I(CT3•XDIE_THERMAL_Q4•X7)	current
+	196	I(CT2•XDIE_THERMAL_Q4•X7)	current
+	197	I(CT1•XDIE_THERMAL_Q4•X7)	current
+	198	I(CT4•XDIE_THERMAL_Q2•X7)	current
+	199	I(CT3•XDIE_THERMAL_Q2•X7)	current
+	200	I(CT2•XDIE_THERMAL_Q2•X7)	current
+	201	I(CT1•XDIE_THERMAL_Q2•X7)	current
+	202	I(CT4•XDIE_THERMAL_Q3•X7)	current
+	203	I(CT3•XDIE_THERMAL_Q3•X7)	current
+	204	I(CT2•XDIE_THERMAL_Q3•X7)	current
+	205	I(CT1•XDIE_THERMAL_Q3•X7)	current
+	206	I(CT4•XDIE_THERMAL_Q1•X7)	current
+	207	I(CT3•XDIE_THERMAL_Q1•X7)	current
+	208	I(CT2•XDIE_THERMAL_Q1•X7)	current
+	209	I(CT1•XDIE_THERMAL_Q1•X7)	current
+	210	I(CG0•XDIE_ELECTRICAL_Q4•X7)	current
+	211	I(C1•XDIE_ELECTRICAL_Q4•X7)	current
+	212	I(CQE•XDIE_ELECTRICAL_Q4•X7)	current
+	213	I(CBYPASS•XDIE_ELECTRICAL_Q4•X7)	current
+	214	I(CG0•XDIE_ELECTRICAL_Q2•X7)	current
+	215	I(C1•XDIE_ELECTRICAL_Q2•X7)	current
+	216	I(CQE•XDIE_ELECTRICAL_Q2•X7)	current
+	217	I(CBYPASS•XDIE_ELECTRICAL_Q2•X7)	current
+	218	I(CG0•XDIE_ELECTRICAL_Q3•X7)	current
+	219	I(C1•XDIE_ELECTRICAL_Q3•X7)	current
+	220	I(CQE•XDIE_ELECTRICAL_Q3•X7)	current
+	221	I(CBYPASS•XDIE_ELECTRICAL_Q3•X7)	current
+	222	I(CG0•XDIE_ELECTRICAL_Q1•X7)	current
+	223	I(C1•XDIE_ELECTRICAL_Q1•X7)	current
+	224	I(CQE•XDIE_ELECTRICAL_Q1•X7)	current
+	225	I(CBYPASS•XDIE_ELECTRICAL_Q1•X7)	current
+Binary:
+¡­Ý3i?œsóýÔ3i?š™™™™™Ù?      ð?      ð?                              ð?        š™™™™™é?	zñFô.@¬|üò±*Þ¿        íõrÀ0A¯ ÞˆÞ?×BÆgä'+@J¨ÁA×Åö?      ð?Rzs07°ÀHéÍÁÜÀö¿pB¥w)+@”£-qÒö?ä{µ­ÀŽìÕB´ö¿Ù[þ²³ò.@÷@à³]Þ¿NHš˜À#{Ë_vVÞ?      Y@j4öÿÿÿX@i¨há3i?Ç¨ÿ9¨É>®F#f6âe?3û>sà3i?t7KØÿÿ:@zRGS¨É>-ñ€²©GI½j4öÿÿÿX@i®">y”»uK«ùvŠ›»uK«ùvŠ›»uK«ùvŠ›»«!ý¸Ø3i?GÅÿ9¨É>„ËzÔk”q?vt.Ä×3i?t7KØÿÿ:@‰IS¨É>$ÝALII½j4öÿÿÿX@Í¬÷‘z”»HAø>Œ›»HAø>Œ›»HAø>Œ›»ý"tñÜf­=ðPF™?9>~;FÌÿéS?2ûf‚a®¥=!”Ôÿÿ:@ª’èØË?9>"ÝALII½ß>sà3i?ÄÑ‘z”»”÷÷>Œ›»”÷÷>Œ›»”÷÷>Œ›»‚S×%v­=48“?9>ö$ö]P:¿ºßI­½¥=!”Ôÿÿ:@™‹"Ã?9>(ñ€²©GI½RX.Ä×3i?Í‚ˆ">y”».œaùvŠ›».œaùvŠ›».œaùvŠ›»ñíÝÚÿÿ:@-›Eüÿ:@ø*?4þ:@      9@ñíÝÚÿÿ:@-›Eüÿ:@ø*?4þ:@$Úÿÿ:@ó›“Eüÿ:@?4þ:@$Úÿÿ:@ó›“Eüÿ:@?4þ:@      Y@,û>sà3i?ot.Ä×3i?}/‚a®¥=ëJ­½¥=)`üò±*Þ¿è’ÁA×Åö?2ü¢-qÒö?t$à³]Þ¿­$¯ ÞˆÞ?æÓÍÁÜÀö¿,jìÕB´ö¿¡^Ë_vVÞ?                                             Ð©7                             Ð©7                             Ì©7                             Ô©7                £æÂö‘I<@ T¹6fÛÙ¾d ;1îÙ?Ÿ¬®ÏÁº¾€»‚½"Sª>}q>™‡ró¿ ³‚½"Sª>rq>™‡ró¿7 ;1îÙ?!Ÿ¬®ÏÁº¾                ÍèP¸â³=¤’ÇÆâ³=61²|‹3?ä?£|‹3?        (ñ€²©GI=              ð¹IóSç?GI=-;–?9>48“?9>        "ÝALII=              ð¹+›ÄüòHI=×°RI˜?9>ðPF™?9>        $ÝALII=              º        J	<?§É>GÅÿ9¨É>        -ñ€²©GI=                        Ã2V?§É>Ç¨ÿ9¨É>!Ÿ¬®ÏÁº>7 ;1îÙ?rq>™‡ró?Å•‚½"Sª>}q>™‡ró?­•‚½"Sª>Ÿ¬®ÏÁº>d ;1îÙ?´a† îÙ?‘â×Êƒró¿†â×Êƒró¿‡a† îÙ?´a† îÙ¿‘â×Êƒró?†â×Êƒró?‡a† îÙ¿Ü+ñ3ƒF9>÷`A»49>»î¢ôÍÉ>Ö«Ø™ÍÉ>  €tkÚÙ>£Q‹›Î©·ŸdÂgdÍ©·gzØÌ©·‘ãR‹›Ò©·Àìd2n’r=ÆŠÂô§“r=åéð¹Þ•H=à‰˜¯
+=Àìd2n’r=ÆŠÂô§“r=åéð¹Þ•H=à‰˜¯
+=°÷d2n’r=¿¢Çô§“r=KH¢ºÞ•H=›â³œ¯
+=°÷d2n’r=¿¢Çô§“r=KH¢ºÞ•H=›â³œ¯
+=PY€b¹@ºþbÅ«Î‚¹Úcëçf©·2çß
+£:ù÷UX:lïšbC„¹­Ÿ
+€Œh©·%L·væ
+£:ùç¬@u:éÄbC„¹ašN€Œh©·¢4
+´ã’;³ŒÊ¨tj:Êï«Î‚¹iÐ§ëçf©·¢4
+´ã’;
