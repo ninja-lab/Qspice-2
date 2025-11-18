@@ -122,7 +122,6 @@
   «wire (-1600,-800) (-1600,-900) "N04"»
   «wire (-1600,-900) (-1200,-900) "N04"»
   «wire (-1200,-900) (-1200,-1000) "N04"»
-  «text (-3300,-2250) 0.65 7 0 0x1000000 -1 -1 "ï»¿.model Si7336ADP VDMOS(Rg=3.5 Rd=1.2m Rs=800Âµ mtriode=1.9 \n+lambda=0.01 Vto=2.9 Ksubthres=100m Kp=280 Cgdmax=1.6n \n+Cgdmin=200p A=1.5 Cgs=5.2n Cjo=3n M=.5 Is=5p Rb=3m \n+mfg=Siliconix Vds=30 Ron=2.4m Qg=36n)"»
   «text (-3300,-1100) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 1"»
   «text (-2650,-1100) 1 7 0 0x1000000 -1 -1 "ï»¿.ic V(gate)=0"»
   «text (-600,50) 1 7 0 0x1000000 -1 -1 "ï»¿.param Vds=800\n.param Id=60"»
