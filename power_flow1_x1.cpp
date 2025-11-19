@@ -1,6 +1,6 @@
 // Automatically generated C++ file on Mon Nov 17 13:01:00 2025
 //
-// To build with Digital Mars C++ Compiler: 
+// To build with Digital Mars C++ Compiler:
 //
 //    dmc -mn -WD power_flow1_x1.cpp kernel32.lib
 
@@ -57,10 +57,20 @@ int __stdcall DllMain(void *module, unsigned int reason, void *reserved) { retur
 #undef mode
 #undef Qcomm
 
+struct CPS_PLL {
+    double theta;     // angle estimate [rad]
+    double omega;     // freq estimate [rad/s]
+    double xi;        // PI integrator state
+    double last_t;    // last time stamp
+};
 struct sPOWER_FLOW1_X1
 {
-  // declare the structure here
+  CPS_PLL pll;      // per-instance PLL state
+
 };
+
+//user function forward declarations
+void pll_step(CPS_PLL, double, double, double, double);
 
 extern "C" __declspec(dllexport) void power_flow1_x1(struct sPOWER_FLOW1_X1 **opaque, double t, union uData *data)
 {
@@ -77,12 +87,64 @@ extern "C" __declspec(dllexport) void power_flow1_x1(struct sPOWER_FLOW1_X1 **op
    {
       *opaque = (struct sPOWER_FLOW1_X1 *) malloc(sizeof(struct sPOWER_FLOW1_X1));
       bzero(*opaque, sizeof(struct sPOWER_FLOW1_X1));
+              // initialize PLL to something sane
+      (*opaque)->pll.theta  = 0.0;
+      (*opaque)->pll.omega  = 2.0 * M_PI * 60.0;
+      (*opaque)->pll.xi     = 0.0;
+      (*opaque)->pll.last_t = t;
    }
    struct sPOWER_FLOW1_X1 *inst = *opaque;
 
 // Implement module evaluation code here:
 
+
+    // --- PLL in PQ mode ---
+    if (mode == 1) { // say 1 = PQ
+        pll_step(inst->pll, Va, Vb, Vc, t);
+    }
+    else if (mode == 2) {
+        // UF mode: generate theta from freq command instead of PLL
+        double Ts = t - inst->pll.last_t;
+        if (Ts <= 0.0) Ts = 1e-6;
+        inst->pll.last_t = t;
+        inst->pll.omega  = 2.0 * M_PI * 60.0; // or from some f_cmd
+        inst->pll.theta += inst->pll.omega * Ts;
+        // wrap theta, etc.
+    }
+
 }
+
+
+static void pll_step(CPS_PLL &pll, double Va, double Vb, double Vc, double t_now)
+{
+    double Ts = t_now - pll.last_t;
+    if (Ts <= 0.0) Ts = 1e-6;
+    pll.last_t = t_now;
+
+    // Clarke
+    double Valpha = (2.0/3.0) * ( Va - 0.5*Vb - 0.5*Vc );
+    double Vbeta  = (2.0/3.0) * ( (sqrt(3.0)/2.0)*(Vb - Vc) );
+
+    // Park
+    double c = cos(pll.theta);
+    double s = sin(pll.theta);
+    double Vd =  Valpha * c + Vbeta * s;
+    double Vq = -Valpha * s + Vbeta * c;
+
+    // PI on Vq
+    const double Kp = 100.0;
+    const double Ki = 2000.0;
+    double e = Vq;
+    pll.xi   += Ki * e * Ts;
+    pll.omega = 2.0 * M_PI * 60.0 + Kp*e + pll.xi;
+
+    // integrate theta
+    pll.theta += pll.omega * Ts;
+    const double TWO_PI = 2.0 * M_PI;
+    if (pll.theta >= TWO_PI) pll.theta -= TWO_PI;
+    if (pll.theta <  0.0)    pll.theta += TWO_PI;
+}
+
 
 extern "C" __declspec(dllexport) void Destroy(struct sPOWER_FLOW1_X1 *inst)
 {
