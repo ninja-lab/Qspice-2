@@ -973,7 +973,7 @@
   «net (4300,2100) 1 14 0 "K1s"»
   «net (4300,1000) 1 14 0 "K2s"»
   «net (-12500,800) 1 13 0 "GND"»
-  «net (-12300,1500) 1 14 0 "phi"»
+  «net (-12400,1500) 1 7 0 "phi"»
   «net (-7200,1300) 1 14 0 "OUTAs"»
   «net (-7200,900) 1 14 0 "OUTBs"»
   «net (-6200,2300) 1 11 0 "GND"»
@@ -988,6 +988,7 @@
   «net (-3100,3800) 1 14 0 "Vin"»
   «net (4900,-300) 1 14 0 "AC3"»
   «net (4900,-700) 1 14 0 "AC4"»
+  «net (-11900,1500) 1 13 0 "GND"»
   «junction (5900,3900)»
   «junction (5900,3700)»
   «junction (5900,3500)»
@@ -1082,11 +1083,10 @@
   «wire (7700,2400) (8000,2400) "G3s"»
   «wire (7700,2100) (8000,2100) "K3s"»
   «wire (-12500,1300) (-12500,1500) "phi"»
-  «wire (-12500,1500) (-12300,1500) "phi"»
+  «wire (-12500,1500) (-12400,1500) "phi"»
   «wire (-12500,900) (-12500,800) "GND"»
   «wire (-6600,2500) (-4500,2500) "OUTA"»
   «wire (-7200,900) (-7500,900) "OUTBs"»
-  «wire (-12300,1500) (-11900,1500) "phi"»
   «wire (9200,2500) (9500,2500) "OUTBs"»
   «wire (8700,2500) (9200,2500) "OUTBs"»
   «wire (9200,1400) (9400,1400) "OUTAs"»
@@ -1125,8 +1125,12 @@
   «wire (2200,1600) (2200,1300) "GND"»
   «text (-11450,100) 1 7 0 0x1000000 -1 -1 "ï»¿.tran num_period/frq"»
   «text (-11600,3400) 1 7 1 0x1000000 -1 -1 "ï»¿tau / T = tau*frq = phi /2*pi\ntau = phi / (2*pi*frq)\nfor zero phase shift, tau = 0\nfor 90 phase shift, tau = "»
-  «text (-11500,-150) 1 7 0 0x1000000 -1 -1 "ï»¿.meas IL_avg1 avg I(L1) from 80/frq to 90/frq"»
-  «text (-11500,-400) 1 7 0 0x1000000 -1 -1 "ï»¿.meas IL_avg2 avg I(L1) from 40/frq to 44/frq"»
-  «text (-10250,-1300) 1 7 0 0x1000000 -1 -1 "ï»¿.lib CBB011M12GM4.lib"»
+  «text (-11450,-100) 1 7 0 0x1000000 -1 -1 "ï»¿.meas IL_avg1 avg I(L1) from 80/frq to 90/frq"»
+  «text (-11450,-300) 1 7 0 0x1000000 -1 -1 "ï»¿.meas IL_avg2 avg I(L1) from 40/frq to 44/frq"»
+  «text (-11450,300) 1 7 0 0x1000000 -1 -1 "ï»¿.lib CBB011M12GM4.lib"»
+  «text (-11450,-450) 1 7 0 0x1000000 -1 -1 "ï»¿.meas IL_avg3 avg I(L1) from 400/frq to 450/frq"»
+  «text (-11450,-600) 1 7 0 0x1000000 -1 -1 "ï»¿.meas IL_avg4 avg I(L1) from 960/frq"»
+  «text (-11450,-800) 1 7 0 0x1000000 -1 -1 "ï»¿.save V(OUTA) V(OUTB) V(G1) V(K1) V(G2) V(K2) I(L1) I(L2) V(VOUT) V(G1s) V(K1s) V(TC1) V(TC2) "»
+  «text (-11450,-1000) 1 7 0 0x1000000 -1 -1 "ï»¿.plot V(VOUT) I(L1)"»
 »
 
