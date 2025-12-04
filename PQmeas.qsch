@@ -1,0 +1,145 @@
+ÿØÿÛ«schematic
+  «component (-300,500) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X1"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (300,500) 0 0
+    «symbol Sum
+      «type: X»
+      «description: Sum»
+      «library file: |.subckt sum pos1 pos2 out\nB1 out 0 V=V(pos1)+V(pos2)\n.ends sum»
+      «shorted pins: false»
+      «line (50,0) (150,0) 0 0 0x1000000 -1 -1»
+      «line (100,50) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (150,-100) (250,-100) 0 0 0x1000000 -1 -1»
+      «line (200,-50) (200,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (0,200) (400,-200) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,300) 1 0 0 0x1000000 -1 -1 "X2"»
+      «text (450,-250) 1 0 2 0x1000000 -1 -1 "SUM"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos1"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "pos2"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-300,-300) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X3"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (-300,-1100) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X4"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (-300,-1900) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X5"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (300,-1100) 0 0
+    «symbol Subtract
+      «type: X»
+      «description: Subtract»
+      «library file: |.subckt subtract pos neg error\nE1 error 0 pos neg 1\n.ends subtract»
+      «shorted pins: false»
+      «line (50,0) (150,0) 0 0 0x1000000 -1 -1»
+      «line (100,50) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (150,-100) (250,-100) 0 0 0x1000000 -1 -1»
+      «ellipse (0,200) (400,-200) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,300) 1 0 0 0x1000000 -1 -1 "X6"»
+      «text (750,-250) 1 0 2 0x1000000 -1 -1 "SUBTRACT"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "neg"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "error"»
+    »
+  »
+  «net (-1700,600) 1 11 1 "Valpha"»
+  «net (-1700,-200) 1 11 1 "Vbeta"»
+  «net (1500,500) 1 7 1 "Pmeas"»
+  «net (1500,-1100) 1 7 1 "Qmeas"»
+  «net (-1700,400) 1 11 1 "Ialpha"»
+  «net (-1700,-400) 1 11 1 "Ibeta"»
+  «junction (-800,-200)»
+  «junction (-1000,400)»
+  «junction (-1200,600)»
+  «junction (-1400,-400)»
+  «wire (-1200,600) (-500,600) "Valpha"»
+  «wire (-1000,400) (-500,400) "Ialpha"»
+  «wire (-800,-200) (-500,-200) "Vbeta"»
+  «wire (-1400,-400) (-500,-400) "Ibeta"»
+  «wire (-100,500) (300,500) "N01"»
+  «wire (-100,-300) (500,-300) "N02"»
+  «wire (500,-300) (500,300) "N02"»
+  «wire (700,500) (1500,500) "Pmeas"»
+  «wire (-1700,-200) (-800,-200) "Vbeta"»
+  «wire (-800,-200) (-800,-1000) "Vbeta"»
+  «wire (-800,-1000) (-500,-1000) "Vbeta"»
+  «wire (-1000,400) (-1000,-1200) "Ialpha"»
+  «wire (-1700,400) (-1000,400) "Ialpha"»
+  «wire (-1000,-1200) (-500,-1200) "Ialpha"»
+  «wire (-1700,600) (-1200,600) "Valpha"»
+  «wire (-1200,600) (-1200,-1800) "Valpha"»
+  «wire (-1200,-1800) (-500,-1800) "Valpha"»
+  «wire (-1400,-400) (-1400,-2000) "Ibeta"»
+  «wire (-1700,-400) (-1400,-400) "Ibeta"»
+  «wire (-1400,-2000) (-500,-2000) "Ibeta"»
+  «wire (-100,-1100) (300,-1100) "N03"»
+  «wire (-100,-1900) (500,-1900) "N04"»
+  «wire (500,-1900) (500,-1300) "N04"»
+  «wire (700,-1100) (1500,-1100) "Qmeas"»
+  «rect (-1700,1500) (1550,-2600) 0 0 2 0xff0000 0x1000000 -1 0 -1»
+»
+

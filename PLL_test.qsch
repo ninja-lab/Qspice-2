@@ -128,5 +128,6 @@
   «text (-3950,-750) 1 7 0 0x1000000 -1 -1 "ï»¿.func Vpk(Vrms) {sqrt(2)*Vrms} "»
   «text (-3850,-1000) 1 7 0 0x1000000 -1 -1 "ï»¿.param vpk=Vpk(480)"»
   «text (-1550,-400) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 200m"»
+  «text (-2300,2750) 1 7 1 0x1000000 -1 -1 "ï»¿this doesn't work due to discontinuities in phase \n"»
 »
 

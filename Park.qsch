@@ -1,0 +1,205 @@
+ÿØÿÛ«schematic
+  «component (-700,900) 0 0
+    «symbol Cosine (radian)
+      «type: X»
+      «description: Cosine (radian)»
+      «library file: |.subckt cosine in out\nB1 out 0 V=cos(V(in))\n.ends cosine»
+      «shorted pins: false»
+      «line (250,50) (300,0) 0 0 0x1000000 -1 -1»
+      «line (300,0) (250,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (300,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,303) 1 7 0 0x1000000 -1 -1 "X1"»
+      «text (0,300) 1 7 2 0x1000000 -1 -1 "COSINE"»
+      «text (40,20) 1.26 0 1 0x1000000 -1 -1 "cos"»
+      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (-700,300) 0 0
+    «symbol Sine (radian)
+      «type: X»
+      «description: Sine (radian)»
+      «library file: |.subckt sine in out\nB1 out 0 V=sin(V(in))\n.ends sine»
+      «shorted pins: false»
+      «line (250,50) (300,0) 0 0 0x1000000 -1 -1»
+      «line (300,0) (250,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (300,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,303) 1 7 0 0x1000000 -1 -1 "X2"»
+      «text (0,300) 1 7 2 0x1000000 -1 -1 "SINE"»
+      «text (40,20) 1.26 0 1 0x1000000 -1 -1 "sin"»
+      «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
+      «pin (300,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (800,1000) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X3"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (800,400) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X5"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (1800,-300) 12 0
+    «symbol Subtract
+      «type: X»
+      «description: Subtract»
+      «library file: |.subckt subtract pos neg error\nE1 error 0 pos neg 1\n.ends subtract»
+      «shorted pins: false»
+      «line (50,0) (150,0) 0 0 0x1000000 -1 -1»
+      «line (100,50) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (150,-100) (250,-100) 0 0 0x1000000 -1 -1»
+      «ellipse (0,200) (400,-200) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (350,-300) 1 64 0 0x1000000 -1 -1 "X6"»
+      «text (750,-250) 1 0 2 0x1000000 -1 -1 "SUBTRACT"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "neg"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "error"»
+    »
+  »
+  «component (2800,1000) 0 0
+    «symbol Sum
+      «type: X»
+      «description: Sum»
+      «library file: |.subckt sum pos1 pos2 out\nB1 out 0 V=V(pos1)+V(pos2)\n.ends sum»
+      «shorted pins: false»
+      «line (50,0) (150,0) 0 0 0x1000000 -1 -1»
+      «line (100,50) (100,-50) 0 0 0x1000000 -1 -1»
+      «line (150,-100) (250,-100) 0 0 0x1000000 -1 -1»
+      «line (200,-50) (200,-150) 0 0 0x1000000 -1 -1»
+      «ellipse (0,200) (400,-200) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,300) 1 0 0 0x1000000 -1 -1 "X7"»
+      «text (450,-250) 1 0 2 0x1000000 -1 -1 "SUM"»
+      «pin (0,0) (20,0) 1 15 0 0x0 -1 "pos1"»
+      «pin (200,-200) (-20,0) 1 15 0 0x0 -1 "pos2"»
+      «pin (400,0) (0,0) 1 15 0 0x0 -1 "out"»
+    »
+  »
+  «component (800,-300) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X4"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (800,-1000) 0 0
+    «symbol Multiplier 1
+      «type: X»
+      «description: Multiplier»
+      «library file: |.subckt multiplier in1 in2 out\nB1 out 0 V=V(in1)*V(in2)\n.ends multiplier»
+      «shorted pins: false»
+      «line (-80,80) (80,-80) 0 0 0x1000000 -1 -1»
+      «line (80,80) (-80,-80) 0 0 0x1000000 -1 -1»
+      «line (150,50) (200,0) 0 0 0x1000000 -1 -1»
+      «line (200,0) (150,-50) 0 0 0x1000000 -1 -1»
+      «rect (-200,200) (200,-200) 0 0 0 0x1000000 0xffe6c8 -1 0 -1»
+      «text (-200,300) 1 7 0 0x1000000 -1 -1 "X8"»
+      «text (50,300) 1 7 2 0x1000000 -1 -1 "MULTIPLIER"»
+      «pin (-200,100) (0,0) 1 15 0 0x0 -1 "in1"»
+      «pin (-200,-100) (0,0) 1 15 0 0x0 -1 "in2"»
+      «pin (200,0) (0,0) 1 0 0 0x0 -1 "out"»
+    »
+  »
+  «component (600,-1600) 2 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "V1"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «net (-1500,600) 1 11 1 "theta"»
+  «net (-1500,-400) 1 11 1 "alpha"»
+  «net (-1500,-1100) 1 11 1 "beta"»
+  «net (3500,1000) 1 7 1 "d"»
+  «net (2400,-300) 1 7 1 "q"»
+  «net (3200,-1600) 1 7 1 "o"»
+  «net (-1500,-1600) 1 11 1 "zero"»
+  «junction (300,900)»
+  «junction (300,-1100)»
+  «junction (100,500)»
+  «junction (-100,300)»
+  «junction (-1200,600)»
+  «wire (-1500,600) (-1200,600) "theta"»
+  «wire (-1200,600) (-1200,900) "theta"»
+  «wire (-1200,900) (-900,900) "theta"»
+  «wire (-1200,600) (-1200,300) "theta"»
+  «wire (-1200,300) (-900,300) "theta"»
+  «wire (-100,300) (600,300) "N01"»
+  «wire (300,900) (600,900) "N02"»
+  «wire (600,1100) (100,1100) "alpha"»
+  «wire (100,-400) (-1500,-400) "alpha"»
+  «wire (100,-400) (100,500) "alpha"»
+  «wire (100,500) (600,500) "alpha"»
+  «wire (100,1100) (100,500) "alpha"»
+  «wire (300,900) (300,-200) "N02"»
+  «wire (-400,900) (300,900) "N02"»
+  «wire (300,-200) (600,-200) "N02"»
+  «wire (-100,300) (-100,-900) "N01"»
+  «wire (-400,300) (-100,300) "N01"»
+  «wire (-100,-900) (600,-900) "N01"»
+  «wire (300,-1100) (600,-1100) "beta"»
+  «wire (600,-400) (300,-400) "beta"»
+  «wire (300,-400) (300,-1100) "beta"»
+  «wire (-1500,-1100) (300,-1100) "beta"»
+  «wire (1000,1000) (2800,1000) "N03"»
+  «wire (1000,-1000) (3000,-1000) "N04"»
+  «wire (3200,1000) (3500,1000) "d"»
+  «wire (1000,400) (2000,400) "N05"»
+  «wire (2000,400) (2000,-100) "N05"»
+  «wire (3000,800) (3000,-1000) "N04"»
+  «wire (1000,-300) (1800,-300) "N06"»
+  «wire (2200,-300) (2400,-300) "q"»
+  «wire (3200,-1600) (800,-1600) "o"»
+  «wire (-1500,-1600) (400,-1600) "zero"»
+  «rect (-1500,1500) (4400,-1800) 0 0 2 0xff0000 0x1000000 -1 0 -1»
+  «text (-1250,1750) 1 7 1 0x1000000 -1 -1 "ï»¿test for radians or degrees here"»
+»
+
