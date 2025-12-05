@@ -7,7 +7,9 @@
 #include <malloc.h>
 #include <math.h>
 extern "C" __declspec(dllexport) void (*bzero)(void *ptr, unsigned int count)   = 0;
-
+// forward-declare the helper so you can call it
+inline void inverse_clarke(double alpha, double beta, double zero,
+                           double &a, double &b, double &c);
 union uData
 {
    bool b;
@@ -39,7 +41,7 @@ int __stdcall DllMain(void *module, unsigned int reason, void *reserved) { retur
 
 
 
-extern "C" __declspec(dllexport) void cps_x13(void **opaque, double t, union uData *data)
+extern "C" __declspec(dllexport) void inv_clark(void **opaque, double t, union uData *data)
 {
    double  alpha = data[0].d; // input
    double  beta  = data[1].d; // input
@@ -59,7 +61,7 @@ inline void inverse_clarke(double alpha, double beta, double zero,
                            double &a, double &b, double &c)
 {
     // These are the exact inverse of the amplitude-invariant Clarke above
-    a = Valpha + V0;
+    a = alpha + zero;
     b = -0.5 * alpha + (sqrt(3.0) / 2.0) * beta + zero;
     c = -0.5 * alpha - (sqrt(3.0) / 2.0) * beta + zero;
 }
